@@ -36,20 +36,20 @@ TensorFlow is a powerful open-source deep learning framework, supporting various
         
         
         <li class="nav-item">
-            <a class="nav-link" href="/">首页</a>
+            <a class="nav-link" href="/">Home</a>
         </li>
         
         
         
         <li class="nav-item nav-item-tag">
-            <a id="nav-tag" class="nav-link" href="#">标签</a>
+            <a id="nav-tag" class="nav-link" href="#">Tags</a>
             <div id="nav-tags" class="nav-tag-wrap">
                 <i class="nav-tag-arrow"></i>
                 
   <div class="widget-wrap">
     <h3 class="widget-title">
         <i class="icon-tag vm"></i>
-        <span class="vm">标签</span>
+        <span class="vm">Tags</span>
     </h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blogging/">Blogging</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Vision/">Computer Vision</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DIY/">DIY</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deep-Learning/">Deep Learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MineSweeping/">MineSweeping</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Other/">Other</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Travel-Gallery/">Travel Gallery</a></li></ul>
@@ -63,19 +63,19 @@ TensorFlow is a powerful open-source deep learning framework, supporting various
         
         
         <li class="nav-item">
-            <a class="nav-link" href="/archives">归档</a>
+            <a class="nav-link" href="/archives">Archives</a>
         </li>
         
         
         
         <li class="nav-item">
-            <a class="nav-link" href="/atom.xml">订阅</a>
+            <a class="nav-link" href="/atom.xml">RSS Feed</a>
         </li>
         
         
         
         <li class="nav-item">
-            <a class="nav-link" href="/about">关于</a>
+            <a class="nav-link" href="/about">About</a>
         </li>
         
         
@@ -134,7 +134,7 @@ TensorFlow is a powerful open-source deep learning framework, supporting various
         
         
         <div align="right">
-        语言
+        Language
         <select id="lang_select">
         
             <option value="zh-cn">zh-cn</option>
@@ -143,7 +143,7 @@ TensorFlow is a powerful open-source deep learning framework, supporting various
         
         </select>
         </div>
-        (本文有其他语言翻译版本)
+        (This post is also translated into other languages)
         
         <p><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script><br><br></p>
 <p lang="en-us"><br>TensorFlow is a powerful open-source deep learning framework, supporting various languages including Python. However, its APIs are far too complicated for a beginner in deep learning(especially those who are new to Python). In order to ease the pain of having to understand the mess of various elements in TensorFlow computation graphs, I made this tutorial to help beginners take the first bite of the cake.<br><br>ResNets are one of the greatest works in the deep learning field. Although they look scary with extreme depths, it&#39;s not a hard job to implement one. Now let&#39;s build one of the simplest ResNets - ResNet-56, and train it on the CIFAR-10 dataset.<br><br></p><br><a id="more"></a><br><p lang="zh-cn"><br>TensorFlow是一个强大的开源深度学习软件库，它支持包括Python在内的多种语言。然而，由于API过于复杂（实际上还有点混乱），它往往使得一个深度学习的初学者（尤其是为此初学Python的那些）望而却步——老虎吃天，无从下口。为了减轻初学者不得不尝试理解TensorFlow中的大量概念的痛苦，我213今天带各位尝尝深度学习这片天的第一口。<br>ResNet是深度学习领域的一个重磅炸弹，尽管它们（ResNet有不同层数的多个模型）的深度看上去有点吓人，但实际上实现一个ResNet并不难。接下来，我们来实现一个较为简单的ResNet——ResNet-56，并在CIFAR-10数据集上训练一下，看看效果如何。<br></p><br><div align="center" class="figure"><br><img src="/images/tftutorial/oyo.gif" alt="Let&#39;s Rock!"><br></div><br><p lang="en-us"><br>First let&#39;s take a look at ResNet-56. It&#39;s proposed by Kaiming He et al., and is designed to confirm the effect of residual networks. It has 56 weighted layers, deep but simple. The structure is shown in the figure below:<br></p><br><p lang="zh-cn"><br>首先来看一下ResNet-56这个神经网络。它是何凯明等在ResNet论文中提出的、用于验证残差网络效果的一个相对简单的残差网络（尽管它很深，深度达到了56个权重层）。图示如下：<br></p><br><div align="center" class="figure"><br><img src="/images/tftutorial/resnet56.png" alt="ResNet-56" width="80%"><br><br>Fig. 1 The structure of ResNet-56<br></div><br><br><br><p lang="en-us"><br>Seems a little bit long? Don&#39;t worry, let&#39;s do this step by step.<br></p><br><p lang="zh-cn"><br>看起来有点长了是不是？别担心，我们一步一步来做。<br></p>
@@ -202,7 +202,7 @@ TensorFlow is a powerful open-source deep learning framework, supporting various
                     }
                 }
             }
-            change_language("zh-cn");
+            change_language("en-us");
             document.getElementById('lang_select').addEventListener('change', function(e){
                 change_language(e.target.value);
             });

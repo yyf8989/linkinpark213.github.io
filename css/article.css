@@ -22,7 +22,7 @@
   transition: all 0.3s ease;
 }
 .article-header h1 a:hover {
-  color: #7cc04b;
+  color: #FF4081;
 }
 .article-meta {
   padding-top: 8px;
@@ -44,7 +44,7 @@
   color: #999;
 }
 .article-tag-link:hover {
-  color: #7cc04b;
+  color: #FF4081;
 }
 .article-more-link {
   text-align: right;
@@ -62,7 +62,7 @@
   transition: all 0.3s ease;
 }
 .article-more-link a:hover {
-  color: #7cc04b;
+  color: #FF4081;
   background-color: #f7f7f7;
   border-color: #dedede;
   text-decoration: none;

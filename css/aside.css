@@ -102,6 +102,15 @@
   color: #999;
   font-size: 14px;
 }
+.author-location a {
+  color: #333;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.author-location a:hover {
+  color: #D32F2F;
+}
 .author-thread-wrap {
   margin-top: 20px;
 }
@@ -118,6 +127,22 @@
 }
 .thread-item:hover {
   color: #333;
+}
+.thread-item .icon-twitter {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.thread-item .icon-twitter:hover {
+  color: #1DA1F2;
+}
+.thread-item .icon-mail {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.thread-item .icon-mail:hover {
+  color: #E91E63;
 }
 @media screen and (max-height: 588px) {
   .author-meta {

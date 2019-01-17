@@ -1582,19 +1582,19 @@ body {
 }
 .markdown-body h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .markdown-body h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .markdown-body h5 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
 }
 .markdown-body h6 {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 200;
 }
 .markdown-body p {
   margin-top: 0;
@@ -1774,6 +1774,7 @@ body {
 }
 .markdown-body h3 {
   font-size: 1.25em;
+  border-bottom: 1px solid #eee;
 }
 .markdown-body h4 {
   font-size: 1em;
@@ -2505,6 +2506,15 @@ body {
   color: #999;
   font-size: 14px;
 }
+.author-location a {
+  color: #333;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.author-location a:hover {
+  color: #D32F2F;
+}
 .author-thread-wrap {
   margin-top: 20px;
 }
@@ -2521,6 +2531,22 @@ body {
 }
 .thread-item:hover {
   color: #333;
+}
+.thread-item .icon-twitter {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.thread-item .icon-twitter:hover {
+  color: #1DA1F2;
+}
+.thread-item .icon-mail {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.thread-item .icon-mail:hover {
+  color: #E91E63;
 }
 @media screen and (max-height: 588px) {
   .author-meta {
@@ -2601,7 +2627,7 @@ body {
   transition: all 0.3s ease;
 }
 .article-header h1 a:hover {
-  color: #7cc04b;
+  color: #FF4081;
 }
 .article-meta {
   padding-top: 8px;
@@ -2623,7 +2649,7 @@ body {
   color: #999;
 }
 .article-tag-link:hover {
-  color: #7cc04b;
+  color: #FF4081;
 }
 .article-more-link {
   text-align: right;
@@ -2641,7 +2667,7 @@ body {
   transition: all 0.3s ease;
 }
 .article-more-link a:hover {
-  color: #7cc04b;
+  color: #FF4081;
   background-color: #f7f7f7;
   border-color: #dedede;
   text-decoration: none;
@@ -2738,7 +2764,7 @@ em {
   color: #4a4a4a;
 }
 .archives a:hover {
-  color: #7cc04b;
+  color: #FF4081;
 }
 .category-list {
   padding-left: 1.75em;
@@ -2747,7 +2773,7 @@ em {
   color: #4a4a4a;
 }
 .category-list a:hover {
-  color: #7cc04b;
+  color: #FF4081;
 }
 .category-list-count {
   margin-left: 1em;
